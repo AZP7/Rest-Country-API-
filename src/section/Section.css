@@ -1,0 +1,32 @@
+.search i{
+    font-size: 1.3rem;
+    color: grey;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+.filter, .filter_option{
+    width: 55%;
+}
+.filter_option >li{
+    margin-top: 1rem;
+}
+.filter_option{
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: dropdown 2s forwards;
+}
+@keyframes dropdown{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    75%{
+        
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}

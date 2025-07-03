@@ -83,7 +83,10 @@ function Section({country, isLoading, error}) {
                         return (
                           <button
                             key={pageNum}
-                            onClick={() => setCurrentPage(pageNum)}
+                            onClick={() => {
+                              setCurrentPage(pageNum);
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
                             className={`btn mt-1 ms-1 btn-primary ${pageNum === currentPage ? 'active' : ''}`}
                           >
                             {pageNum}

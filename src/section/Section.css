@@ -5,27 +5,48 @@
     transform: translateY(-50%);
     left: 5%;
 }
-.filter, .filter_option{
-    width: 55%;
+.search input {
+    outline: none;
 }
-.filter_option >li{
-    margin-top: 1rem;
+.filter{
+    width: 55%;
+    cursor: pointer;
+    transition: all .8s ease;
 }
 .filter_option{
-    transform: translateY(-100%);
-    opacity: 0;
-    animation: dropdown 2s forwards;
+    cursor: pointer;
+    bottom: -70%;
+    z-index: 100;
+    background-color: #fff;
+}
+.filter_option{
+    animation: dropdown 1.5s forwards;
+}
+.filter_option>li {
+    transition: all .8s ease;
+}
+.filter_option>li:hover ,.filter:hover{
+    background-color: rgb(76, 76, 76);
+    color: #fff;
+}
+.nation{
+    width: 80%;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.nation:hover{
+  box-shadow: 0 4px 8px rgba(102, 102, 102, 0.8) !important; /* light grey shadow */
 }
 @keyframes dropdown{
     0%{
-        transform: translateY(-100%);
+        bottom: -70%;
         opacity: 0;
     }
     75%{
-        
+        opacity: 0.5;
     }
     100%{
-        transform: translateY(0);
+        bottom: -110%;
         opacity: 1;
 
     }

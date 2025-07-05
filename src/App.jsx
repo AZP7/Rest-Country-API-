@@ -9,7 +9,7 @@ function App() {
   const [error, setError] = useState('')
   return (
     <>
-      <Section country={country} isLoading={isLoading} error={error}></Section>      
+      <Section country={country} setError={setError} isLoading={isLoading} error={error}></Section>      
       <Nation setCountry={setCountry} setError={setError} setIsLoading={setIsLoading} ></Nation>
     </>
   )

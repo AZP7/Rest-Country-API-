@@ -3,7 +3,8 @@
     color: grey;
     top: 50%;
     transform: translateY(-50%);
-    left: 5%;
+    right: 5%;
+    cursor: pointer;
 }
 .search input {
     outline: none;
@@ -20,7 +21,7 @@
     background-color: #fff;
 }
 .filter_option{
-    animation: dropdown 1.5s forwards;
+    animation: dropdown .7s forwards;
 }
 .filter_option>li {
     transition: all .8s ease;
@@ -46,7 +47,7 @@
         opacity: 0.5;
     }
     100%{
-        bottom: -110%;
+        bottom: -120%;
         opacity: 1;
 
     }

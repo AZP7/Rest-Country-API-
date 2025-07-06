@@ -16,14 +16,12 @@
 }
 .filter_option{
     cursor: pointer;
-    bottom: -70%;
     z-index: 100;
     background-color: #fff;
-}
-.filter_option{
-    animation: dropdown .7s forwards;
+    bottom: -130%;
 }
 .filter_option>li {
+    font-size: .7rem ;
     transition: all .8s ease;
 }
 .filter_option>li:hover ,.filter:hover{
@@ -31,24 +29,58 @@
     color: #fff;
 }
 .nation{
-    width: 80%;
+    width: 350px;
+    height: 450px;
     cursor: pointer;
     transition: all .5s ease;
+    overflow: hidden;
+}
+.nation img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .nation:hover{
   box-shadow: 0 4px 8px rgba(102, 102, 102, 0.8) !important; /* light grey shadow */
 }
-@keyframes dropdown{
-    0%{
-        bottom: -70%;
-        opacity: 0;
+.dark_light{
+    cursor: pointer;
+}
+.nation_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nation_1 img{
+    width: 85%;
+}
+.default_btn{
+    font-size: .7rem !important;
+}
+@media(min-width:1051px){
+    .filter_option{
+        right: 0;
+        bottom: -290%;
+        width: 25% !important;
     }
-    75%{
-        opacity: 0.5;
+    .nation_1{
+        flex-direction: row !important;
+        align-items: start;
+        justify-content: space-between;
+        height: 80vh;
+        padding-top: 10%;
+        padding-left: 3%;
     }
-    100%{
-        bottom: -120%;
-        opacity: 1;
-
+    .nation_1 img{
+        width: 45% !important;
+    }
+    .nation_1 .about{
+        display: flex;
+    }
+    .default_btn{
+        width: 10% !important;
+        border-radius: 10px !important;
     }
 }

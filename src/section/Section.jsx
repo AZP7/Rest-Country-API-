@@ -149,7 +149,7 @@ const setBackToDefault = ()=>{
                             <i className="fa-solid fa-magnifying-glass position-absolute" style={{left:'10px',width:'30px'}}
                             ></i>
                             <input
-                             type="text" className='rounded p-1 ps-5 border-0'
+                             type="text" className='rounded p-1 ps-5 border-0 shadow'
                             style={{width:"30%",outline:"none",backgroundColor: isDark ? 'hsl(209, 23%, 22%)' : '#fff'}} />
 
                           <div onClick={HandleFilter}
@@ -219,7 +219,9 @@ const setBackToDefault = ()=>{
                       details ?
                         countryData.map((nation) =>(
                           <div  key={nation.id} className={`nation_1 shadow overflow-hidden mb-3 d-flex flex-column pb-3`}>
-                            <img src={nation.flags.png} alt="National Flag" />
+                            <img src={nation.flags.png} alt="National Flag"
+                            style={{boxShadow: isLarge ? '0 4px 8px rgba(0, 0, 0, 0.2)' : 'none' }}
+                            />
                             {
                               isLarge? 
                               <div className="about">

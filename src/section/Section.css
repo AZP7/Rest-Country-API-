@@ -68,9 +68,8 @@
     .nation_1{
         flex-direction: row !important;
         align-items: start;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 80vh;
-        padding-top: 10%;
         padding-left: 3%;
     }
     .nation_1 img{
